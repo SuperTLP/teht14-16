@@ -6,7 +6,7 @@ def sort_by_points(player):
 
 
 class Statistics:
-    def __init__(self, reader):
+    def __init__(self, reader: PlayerReader):
 
         self._players = reader.get_players()
 
