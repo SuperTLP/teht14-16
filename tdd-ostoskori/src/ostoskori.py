@@ -5,7 +5,7 @@ class Ostoskori:
     def __init__(self):
         pass
         self.kori=[]
-        self._hinta=0
+
     def tavaroita_korissa(self):
         maara = 0
         for i in self.kori:
@@ -23,8 +23,13 @@ class Ostoskori:
         # kertoo korissa olevien ostosten yhteenlasketun hinnan
 
     def lisaa_tuote(self, lisattava: Tuote):
-        ostos=Ostos(lisattava)
-        self.kori.append(ostos)
+        new = list(filter(lambda x: x.tuotteen_nimi==lisattava.nimi, self.kori))
+        if len(new)==0:
+            ostos=Ostos(lisattava)
+            self.kori.append(ostos)
+            return
+        new[0].muuta_lukumaaraa(1)
+        
         pass
 
     def poista_tuote(self, poistettava: Tuote):
