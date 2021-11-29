@@ -34,8 +34,10 @@ class Ostoskori:
         pass
 
     def poista_tuote(self, poistettava: Tuote):
-        # poistaa tuotteen
-        pass
+        new = list(filter(lambda x: x.tuotteen_nimi()==poistettava.nimi(), self.kori))
+        if len(new)==0:
+            return
+        self.kori[self.kori.index(new[0])].muuta_lukumaaraa(-1)
 
     def tyhjenna(self):
         pass
