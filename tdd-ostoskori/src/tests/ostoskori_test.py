@@ -99,5 +99,13 @@ class TestOstoskori(unittest.TestCase):
         hinta = self.kori.hinta()
         self.assertEqual(len(ostokset)+hinta, 0)
 
-
+    def test_tyhjenna_tyhjentaa_korin(self):
+        self.kori.lisaa_tuote(Tuote("Maito", 3))
+        self.kori.poista_tuote(Tuote("Maito", 3))
+        self.kori.lisaa_tuote(Tuote("kurpitsa", 5))
+        self.kori.lisaa_tuote(Tuote("kurpitsa", 5))
+        self.kori.tyhjenna()
+        ostokset = self.kori.ostokset()
+        
+        self.assertEqual(len(ostokset), 0)
     
