@@ -17,8 +17,9 @@ class Ostoskori:
 
     def hinta(self):
         hinta = 0
+        maara=0
         for i in self.kori:
-            hinta+=i.lukumaara()*i.hinta()
+            hinta+=i.hinta()
         return hinta
         # kertoo korissa olevien ostosten yhteenlasketun hinnan
 
@@ -28,7 +29,7 @@ class Ostoskori:
             ostos=Ostos(lisattava)
             self.kori.append(ostos)
             return
-        new[0].muuta_lukumaaraa(1)
+        self.kori[self.kori.index(new[0])].muuta_lukumaaraa(1)
         
         pass
 
