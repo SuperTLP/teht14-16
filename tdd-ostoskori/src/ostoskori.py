@@ -3,7 +3,6 @@ from ostos import Ostos
 
 class Ostoskori:
     def __init__(self):
-        pass
         self._kori=[]
 
     def tavaroita_korissa(self):
@@ -17,7 +16,6 @@ class Ostoskori:
 
     def hinta(self):
         hinta = 0
-        maara=0
         for i in self._kori:
             hinta+=i.hinta()
         return hinta
@@ -30,8 +28,6 @@ class Ostoskori:
             self._kori.append(ostos)
             return
         self._kori[self._kori.index(new[0])].muuta_lukumaaraa(1)
-        
-        pass
 
     def poista_tuote(self, poistettava: Tuote):
         new = list(filter(lambda x: x.tuotteen_nimi()==poistettava.nimi(), self._kori))
