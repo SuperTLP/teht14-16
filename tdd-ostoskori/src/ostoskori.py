@@ -23,7 +23,7 @@ class Ostoskori:
         # kertoo korissa olevien ostosten yhteenlasketun hinnan
 
     def lisaa_tuote(self, lisattava: Tuote):
-        new = list(filter(lambda x: x.tuotteen_nimi==lisattava.nimi, self.kori))
+        new = list(filter(lambda x: x.tuotteen_nimi()==lisattava.nimi(), self.kori))
         if len(new)==0:
             ostos=Ostos(lisattava)
             self.kori.append(ostos)
