@@ -1,0 +1,6 @@
+Scrumissa Sprintit päättyvät retrospektiiviin, jolla pyritään optimoimaan tiimin työskentelyä tarkastelemalla edellisen sprintin hyviä ja huonoja käytänteitä. Retrospektiivissä käytetyt tekniikat vaihtelevat, mutta päämäärä pysyy samana. Tarkastellaan nyt kahta retrospektiivitekniikkaa.
+
+Start, Stop, Continue, More of, Less of Wheel on tekniikka, jolla pyritään kartoittamaan edellisen sprintin hyviä ja huonoja käytänteitä. Nimensä mukaisesti mietitään, mitä käytänteitä tulisi aloittaa, jatkaa, lopettaa, lisätä tai vähentää. 
+Tekniikkaa voidaan hyödyntää esimerkiksi piirtämällä viiteen osaan: start, stop, continue, more of tai less of. Tiimin jäsenet lisäävät kuhunkin sektoriin oman näkemyksensä mukaan tiimin käytänteitä. Näin kartoitetaan tiimin näkemys omasta toiminnastaan.
+
+Glad, Mad, Sad tekniikka on edellisen kaltainen, mutta siinä jako on kolmiosainen. Retrospektiivissä kukin tiimin jäsen kirjoittaa lapuille sprintin aikaisia ilmiöitä. Tämän jälkeen he antavat havaitsemastaan ilmiöstä pienen kuvauksen, ja kiinnittävät laput valkotaululle, joka on jaettu kolmeen osaan: Glad, Mad tai Sad. Samaan asiaan viittaavat laput ryhmitellään pinoihin. Tämän jälkeen tiimin jäsenet äänestävät, minkä pinojen aiheita haluavat käydä läpi. Tämän jälkeen aiheista keskustellaan retrospektiivin johtajan johdolla.
